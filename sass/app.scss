@@ -1,5 +1,6 @@
 
 body {
+
  // background: #F7F7F7;
  background: white;
  overflow: hidden;
@@ -112,6 +113,7 @@ body {
 
 }
 
+
 .project-list-item {
   margin-left: 15%;
 }
@@ -129,6 +131,7 @@ body {
 .clip-each-big {
   position: relative;
 }
+
 
 
 
@@ -373,11 +376,13 @@ body {
 }
 
 .border-style-gradient-big:after {
+
   top: 2.5px;
   left: 2.5px;
   right: 2.5px;
   bottom: -0.5px;
   z-index: -1;
 }
+
 
 }
