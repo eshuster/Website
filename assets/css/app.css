@@ -1,0 +1,301 @@
+body {
+  background: white;
+  overflow: hidden;
+}
+body a {
+  text-decoration: none;
+}
+body .clip-wrap-polygon {
+  width: 780px;
+  height: 780px;
+  margin-left: 27%;
+  margin-top: 17%;
+}
+body .outer-octagon {
+  margin-top: -15%;
+  width: 1200px;
+  height: 1200px;
+  margin-left: -4.25%;
+}
+body .outer-octagon .clip-wrap-polygon .left-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: 15px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .left-layer .clip-wrap-1 {
+  margin-top: 276px;
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .middle-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: -5px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-2 {
+  margin-left: 14px;
+  margin-top: 0px;
+  margin-bottom: 38px;
+}
+body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-4 {
+  margin-left: 14px;
+  margin-top: 40px;
+}
+body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-5 {
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .right-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: -5px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .right-layer .clip-wrap-3 {
+  margin-top: 276px;
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .button-links {
+  font-color: linear-gradient(94deg, #93e0e1, #7888dd);
+  font-style: bold;
+  text-decoration: none;
+  margin-left: 22%;
+  margin-top: 40%;
+  z-index: 1;
+  position: absolute;
+  font-size: 1.5em;
+}
+body .outer-octagon .clip-wrap-polygon .center-gradient:after {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+body .outer-octagon-right {
+  margin-top: -15%;
+  width: 1200px;
+  height: 1200px;
+  margin-left: 80%;
+}
+body .outer-octagon-right .clip-wrap-polygon {
+  width: 780px;
+  height: 780px;
+  margin-top: 17.5%;
+  margin-left: 7%;
+  opacity: .5;
+}
+body .project-list-item {
+  margin-left: 15%;
+}
+body .project-item-div {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: 2px solid black;
+}
+body .clip-each-big {
+  position: relative;
+}
+body .clip-each-big:after {
+  content: "";
+  position: absolute;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+body .clip-each-home {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  margin-top: 27px;
+  margin-bottom: -14.0px;
+}
+body .leftsidebar {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin-top: 15%;
+}
+body .sidebar {
+  height: 775px;
+  margin-top: 208px;
+  width: 440px;
+  float: left;
+}
+body .sidebar .clip-each-home {
+  opacity: .35;
+}
+body .sidebar .side1 {
+  width: 200px;
+  height: 200px;
+  margin-top: -150px;
+  margin-left: 268px;
+}
+body .sidebar .side2 {
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  margin-left: 110px;
+}
+body .sidebar .side3 {
+  width: 200px;
+  height: 200px;
+  margin-top: 65px;
+  margin-left: 70px;
+}
+body .sidebar .side4 {
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+body .sidebar .side5 {
+  width: 200px;
+  height: 200px;
+  margin-left: 268px;
+  margin-top: 0px;
+}
+body .clip-each-home:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+body .middle:after {
+  background: #93e0e1;
+}
+body .projects-container a {
+  z-index: 2;
+}
+body .projects-container .top-container, body .projects-container .middle-container, body .projects-container .bottom-container {
+  position: relative;
+}
+body .projects-container .top-container:after, body .projects-container .middle-container:after, body .projects-container .bottom-container:after {
+  content: "";
+  position: absolute;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+body .projects-container .top-container {
+  width: 755px;
+  height: 723px;
+  margin-left: 10.5%;
+  top: 21px;
+}
+body .projects-container .project-one {
+  position: absolute;
+  font-size: 75px;
+  top: 9%;
+  left: 41%;
+}
+body .projects-container .project-two {
+  position: absolute;
+  font-size: 75px;
+  top: 59%;
+  left: 29%;
+}
+body .projects-container .project-three {
+  position: absolute;
+  font-size: 75px;
+  top: 77%;
+  left: 41%;
+}
+body .projects-container .top-container:hover, body .projects-container .middle-container:hover, body .projects-container .bottom-container:hover {
+  background: #A8DDDE;
+}
+body .projects-container .middle-container {
+  width: 752px;
+  height: 460px;
+  top: 7.8%;
+  left: 11%;
+  position: absolute;
+}
+body .projects-container .bottom-container {
+  width: 751px;
+  height: 674px;
+  margin-left: 11%;
+  top: 8%;
+  position: absolute;
+}
+body .clip-each, body .clip-each:after, body .clip-each-big, body .clip-each-big:after, body .clip-each-home, body .clip-each-home:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+body .clip-each-home:hover {
+  background: #A8DDDE;
+}
+body .octagon-top, body .octagon-top:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 0 30%, 30% 0);
+  clip-path: polygon(0 0, 70% 0, 100% 40%, 0 40%, 0 0);
+}
+body .octagon-bottom, body .octagon-bottom:after {
+  -webkit-clip-path: polygon(30% 100%, 70% 100%, 100% 69%, 0 69%, 30% 100%);
+  clip-path: polygon(30% 100%, 70% 100%, 100% 69%, 0 69%, 30% 100%);
+}
+body .octagon-middle, body .octagon-middle:after {
+  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+  clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+}
+body .clip-each-small, body .clip-each-small:after, body .sideOctagon, body .sideOctagon:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+body .border-style-gradient:after {
+  top: 1.5px;
+  left: 1.5px;
+  right: 1.5px;
+  bottom: 1.5px;
+}
+body .center-gradient:after {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+body .center-gradient-middle:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+body .border-style-gradient, body .border-style-gradient-project, body .border-style-gradient-project-bottom, body .border-style-gradient-project-middle {
+  background: linear-gradient(94deg, #93e0e1, #7888dd);
+}
+body .border-style-gradient-project:after {
+  top: 5px;
+  left: 8px;
+  right: 8px;
+  bottom: 28px;
+}
+body .border-style-gradient-project-bottom:after {
+  position: absolute;
+  top: 28px;
+  left: 8px;
+  right: 8px;
+  bottom: 5px;
+}
+body .border-style-gradient-big {
+  position: absolute;
+  background: linear-gradient(94deg, #93e0e1, #7888dd);
+}
+body .border-style-gradient-big:after {
+  top: 2.5px;
+  left: 2.5px;
+  right: 2.5px;
+  bottom: -0.5px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=app.css.map */

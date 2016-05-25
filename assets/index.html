@@ -1,0 +1,215 @@
+<!doctype html>
+<html ng-app="sampleSite" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Starter MEAN Single Page Application</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css"> <!-- custom styles -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- JS -->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/angular-animate/angular-animate.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/ProjectsCtrl.js"></script>
+    <script src="js/controllers/LinksCtrl.js"></script>
+    <script src="js/controllers/CntactCtrl.js"></script>
+    <script src="js/controllers/AbtCtrl.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<div class="outer-octagon clip-each-big border-style-gradient-big" ng-controller="mainController as main">
+    <div class="clip-wrap-polygon clip-each-big border-style-gradient-big animated">
+            <div class="left-layer">
+               <div class="clip-wrap-1">
+                <div class="clip-each-home border-style-gradient center-gradient"><p class="button-links" ng-click="main.addRollAnimation();">About Me</p></div>
+            </div>
+        </div>
+
+        <div class="middle-layer">
+            <div class="clip-wrap-2">
+                <div class="clip-each-home border-style-gradient center-gradient"><p class="button-links" ng-click="main.addRollAnimation();">About Me</p></div>
+            </div>
+
+            <div class="clip-wrap-5">
+                <div class="clip-each-home border-style-gradient center-middle-gradient"></div>
+            </div>
+
+            <div class="clip-wrap-4">
+                <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation()"><p class="button-links contacts" href="#/contacts">Contact</p></div>
+            </div>
+
+        </div>
+
+        <div class="right-layer">
+            <div class="clip-wrap-3">
+                <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation()"><p class="button-links links-big" href="#/links">Links</p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="clip-each-home side1 border-style-gradient"></div>
+        <div class="clip-each-home side2 border-style-gradient"></div>
+        <div class="clip-each-home side3 border-style-gradient"></div>
+        <div class="clip-each-home side4 border-style-gradient"></div>
+        <div class="clip-each-home side5 border-style-gradient"></div>
+    </div>
+
+    </div>
+</html>
+
+<div class="outer-octagon-right clip-each-big border-style-gradient-big">
+    <div class="clip-wrap-polygon clip-each-big border-style-gradient-big">
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--     <div class="clip-wrap-polygon-bg clip-each-big border-style-gradient-big animated">
+        <div class="side-octagons-container" ng-show="main.home == false;">
+            <div class="sideOctagon one border-style-gradient animated"><a>About Me</a></div>
+            <div class="sideOctagon two border-style-gradient animated"><a>Projects</a></div>
+            <div class="sideOctagon three border-style-gradient animated"><a>Links</a></div>
+        </div>
+    </div> -->
+
+<!--         <div class="projects-container" ng-show="main.projects == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">2TR</a>
+            </div>
+            <div class="middle-container octagon-middle border-style-gradient animated">
+                <a class="project-two">FlowChart</a>
+            </div>
+            <div class="border-style-gradient-project-bottom bottom-container octagon-bottom animated">
+                <a class="project-three">TBA</a>
+            </div>
+        </div>
+
+        <div class="about-container" ng-show="main.about == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">About</a>
+            </div>
+        </div>
+
+        <div class="links-container" ng-show="main.links == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">Links</a>
+            </div>
+        </div>
+
+        <div class="contact-container" ng-show="main.contact == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">Contact</a>
+            </div>
+        </div> -->
+
+
+
+
+<!-- <div class="outer-octagon clip-each-big border-style-gradient-big" ng-controller="mainController as main">
+    <div class="ng-view-container" >
+
+        <div class="buttons">
+            <div class="clip-wrap-1">
+                <div class="clip-each-home border-style-gradient"><p class="button-links" ng-click="main.addRollAnimation();">About Me</p></div>
+            </div>
+
+            <div class="clip-wrap-2" ng-click="main.addRollAnimation()">
+                <div class="clip-each-home border-style-gradient"><p class="button-links projects" href="#/projects" ng-click="main.addRollAnimation();">Projects</p></div>
+            </div>
+
+            <div class="clip-wrap-5">
+                <div class="clip-each-home center border-style-gradient"></div>
+            </div>
+
+            <div class="clip-wrap-3">
+                <div class="clip-each-home border-style-gradient" ng-click="main.addRollAnimation()"><p class="button-links links-big" href="#/links">Links</p></div>
+            </div>
+
+            <div class="clip-wrap-4">
+                <div class="clip-each-home border-style-gradient" ng-click="main.addRollAnimation()"><p class="button-links contacts" href="#/contacts">Contact</p></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sidebar">
+        <div class="clip-each-home side1 border-style-gradient"></div>
+        <div class="clip-each-home side2 border-style-gradient"></div>
+        <div class="clip-each-home side3 border-style-gradient"></div>
+        <div class="clip-each-home side4 border-style-gradient"></div>
+
+    </div>
+
+
+    <div class="clip-wrap-polygon clip-each-big border-style-gradient-big animated"></div>
+</div>
+
+</html>
+-->
+
+
+
+
+
+
+<!--     <div class="clip-wrap-polygon-bg clip-each-big border-style-gradient-big animated">
+        <div class="side-octagons-container" ng-show="main.home == false;">
+            <div class="sideOctagon one border-style-gradient animated"><a>About Me</a></div>
+            <div class="sideOctagon two border-style-gradient animated"><a>Projects</a></div>
+            <div class="sideOctagon three border-style-gradient animated"><a>Links</a></div>
+        </div>
+    </div> -->
+
+<!--         <div class="projects-container" ng-show="main.projects == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">2TR</a>
+            </div>
+            <div class="middle-container octagon-middle border-style-gradient animated">
+                <a class="project-two">FlowChart</a>
+            </div>
+            <div class="border-style-gradient-project-bottom bottom-container octagon-bottom animated">
+                <a class="project-three">TBA</a>
+            </div>
+        </div>
+
+        <div class="about-container" ng-show="main.about == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">About</a>
+            </div>
+        </div>
+
+        <div class="links-container" ng-show="main.links == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">Links</a>
+            </div>
+        </div>
+
+        <div class="contact-container" ng-show="main.contact == true">
+            <div class="border-style-gradient-project top-container octagon-top animated">
+                <a class="project-one">Contact</a>
+            </div>
+        </div> -->
