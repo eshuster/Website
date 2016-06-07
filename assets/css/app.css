@@ -5,11 +5,48 @@ body {
 body a {
   text-decoration: none;
 }
+body .clip-each-big {
+  position: relative;
+}
+body .clip-each-big:after {
+  content: "";
+  position: absolute;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+body .clip-each-home {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  margin-top: 27px;
+  margin-bottom: -14.0px;
+}
+body .clip-each-home:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
 body .clip-wrap-polygon {
   width: 780px;
   height: 780px;
   margin-left: 27%;
   margin-top: 17%;
+}
+body .inner-clip-wrap-polygon {
+  width: 580px;
+  height: 580px;
+  margin-left: 100px;
+  margin-top: 105px;
 }
 body .outer-octagon {
   margin-top: -15%;
@@ -66,10 +103,101 @@ body .outer-octagon .clip-wrap-polygon .button-links {
   font-size: 1.5em;
 }
 body .outer-octagon .clip-wrap-polygon .center-gradient:after {
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+body .outer-octagon .sidebar {
+  height: 775px;
+  margin-top: 208px;
+  width: 440px;
+  float: left;
+}
+body .outer-octagon .sidebar .button-links {
+  font-color: linear-gradient(94deg, #93e0e1, #7888dd);
+  font-style: bold;
+  text-decoration: none;
+  margin-left: 22%;
+  margin-top: 40%;
+  z-index: 1;
+  position: absolute;
+  font-size: 1.5em;
+}
+body .outer-octagon .sidebar .clip-each-home {
+  opacity: .5;
+}
+body .outer-octagon .sidebar .side1 {
+  width: 200px;
+  height: 200px;
+  margin-top: -150px;
+  margin-left: 268px;
+}
+body .outer-octagon .sidebar .side2 {
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  margin-left: 110px;
+}
+body .outer-octagon .sidebar .side3 {
+  width: 200px;
+  height: 200px;
+  margin-top: 65px;
+  margin-left: 70px;
+}
+body .outer-octagon .sidebar .side4 {
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+body .outer-octagon .sidebar .side5 {
+  width: 200px;
+  height: 200px;
+  margin-left: 268px;
+  margin-top: 0px;
+}
+body .outer-octagon .sidebar .side2:hover, body .outer-octagon .sidebar .side3:hover, body .outer-octagon .sidebar .side4:hover {
+  opacity: 1;
+}
+body .links-container .side {
+  width: 180px;
+  height: 180px;
+}
+body .links-container .first {
+  margin-top: 235px;
+  margin-left: 50px;
+}
+body .links-container .second {
+  margin-top: -395px;
+  margin-left: 310px;
+}
+body .links-container .third {
+  margin-top: 170px;
+  margin-left: 520px;
+}
+body .links-container .fourth {
+  margin-left: 240px;
+  margin-top: -10px;
+}
+body .contacts-container .clip-wrap-polygon {
+  width: 325px;
+  height: 325px;
+  margin-left: 30px;
+  margin-top: 180px;
+}
+body .contacts-container .right-top-octagon {
+  width: 250px;
+  height: 250px;
+  margin-left: 385px;
+  margin-top: 60px;
+}
+body .contacts-container .octagon-bottom {
+  width: 600px !important;
+  height: 600px !important;
+  left: 110px !important;
+  top: 155px !important;
+  position: absolute;
 }
 body .outer-octagon-right {
   margin-top: -15%;
@@ -84,6 +212,22 @@ body .outer-octagon-right .clip-wrap-polygon {
   margin-left: 7%;
   opacity: .5;
 }
+body .outer-octagon-right .clip-wrap-polygon .side {
+  width: 150px;
+  height: 150px;
+  margin-top: 310px;
+  margin-left: 25px;
+}
+body .outer-octagon-right .clip-wrap-polygon .side .button-links {
+  font-color: linear-gradient(94deg, #93e0e1, #7888dd);
+  font-style: bold;
+  text-decoration: none;
+  margin-left: 22%;
+  margin-top: 40%;
+  z-index: 1;
+  position: absolute;
+  font-size: 1.5em;
+}
 body .project-list-item {
   margin-left: 15%;
 }
@@ -93,92 +237,13 @@ body .project-item-div {
   padding-bottom: 3%;
   border: 2px solid black;
 }
-body .clip-each-big {
-  position: relative;
-}
-body .clip-each-big:after {
-  content: "";
-  position: absolute;
-  background: white;
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-body .clip-each-home {
-  position: relative;
-  width: 225px;
-  height: 225px;
-  margin-top: 27px;
-  margin-bottom: -14.0px;
-}
-body .leftsidebar {
-  position: relative;
-  width: 125px;
-  height: 125px;
-  margin-top: 15%;
-}
-body .sidebar {
-  height: 775px;
-  margin-top: 208px;
-  width: 440px;
-  float: left;
-}
-body .sidebar .clip-each-home {
-  opacity: .35;
-}
-body .sidebar .side1 {
-  width: 200px;
-  height: 200px;
-  margin-top: -150px;
-  margin-left: 268px;
-}
-body .sidebar .side2 {
-  width: 200px;
-  height: 200px;
-  margin-top: 5px;
-  margin-left: 110px;
-}
-body .sidebar .side3 {
-  width: 200px;
-  height: 200px;
-  margin-top: 65px;
-  margin-left: 70px;
-}
-body .sidebar .side4 {
-  width: 200px;
-  height: 200px;
-  margin-left: 100px;
-  margin-top: 65px;
-}
-body .sidebar .side5 {
-  width: 200px;
-  height: 200px;
-  margin-left: 268px;
-  margin-top: 0px;
-}
-body .clip-each-home:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: white;
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-body .middle:after {
-  background: #93e0e1;
-}
-body .projects-container a {
+body .content-container a {
   z-index: 2;
 }
-body .projects-container .top-container, body .projects-container .middle-container, body .projects-container .bottom-container {
+body .content-container .top-container, body .content-container .middle-container, body .content-container .bottom-container {
   position: relative;
 }
-body .projects-container .top-container:after, body .projects-container .middle-container:after, body .projects-container .bottom-container:after {
+body .content-container .top-container:after, body .content-container .middle-container:after, body .content-container .bottom-container:after {
   content: "";
   position: absolute;
   background: white;
@@ -188,46 +253,46 @@ body .projects-container .top-container:after, body .projects-container .middle-
   -o-animation: AnimationName 10s ease infinite;
   animation: AnimationName 10s ease infinite;
 }
-body .projects-container .top-container {
-  width: 755px;
-  height: 723px;
-  margin-left: 10.5%;
-  top: 21px;
+body .content-container .top-container {
+  width: 720px;
+  height: 720px;
+  left: 30px;
+  top: 13px;
 }
-body .projects-container .project-one {
+body .content-container .top-container .project-one {
   position: absolute;
   font-size: 75px;
   top: 9%;
   left: 41%;
 }
-body .projects-container .project-two {
+body .content-container .middle-container {
+  width: 740px;
+  height: 490px;
+  top: 46px;
+  left: 20px;
+  position: absolute;
+}
+body .content-container .middle-container .project-two {
   position: absolute;
   font-size: 75px;
   top: 59%;
   left: 29%;
 }
-body .projects-container .project-three {
+body .content-container .top-container:hover, body .content-container .middle-container:hover, body .content-container .bottom-container:hover {
+  background: #A8DDDE;
+}
+body .content-container .bottom-container {
+  width: 720px;
+  height: 725px;
+  left: 28px;
+  top: 50px;
+  position: absolute;
+}
+body .content-container .bottom-container .project-three {
   position: absolute;
   font-size: 75px;
   top: 77%;
   left: 41%;
-}
-body .projects-container .top-container:hover, body .projects-container .middle-container:hover, body .projects-container .bottom-container:hover {
-  background: #A8DDDE;
-}
-body .projects-container .middle-container {
-  width: 752px;
-  height: 460px;
-  top: 7.8%;
-  left: 11%;
-  position: absolute;
-}
-body .projects-container .bottom-container {
-  width: 751px;
-  height: 674px;
-  margin-left: 11%;
-  top: 8%;
-  position: absolute;
 }
 body .clip-each, body .clip-each:after, body .clip-each-big, body .clip-each-big:after, body .clip-each-home, body .clip-each-home:after {
   -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
@@ -241,8 +306,8 @@ body .octagon-top, body .octagon-top:after {
   clip-path: polygon(0 0, 70% 0, 100% 40%, 0 40%, 0 0);
 }
 body .octagon-bottom, body .octagon-bottom:after {
-  -webkit-clip-path: polygon(30% 100%, 70% 100%, 100% 69%, 0 69%, 30% 100%);
-  clip-path: polygon(30% 100%, 70% 100%, 100% 69%, 0 69%, 30% 100%);
+  -webkit-clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
+  clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
 }
 body .octagon-middle, body .octagon-middle:after {
   -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
@@ -253,16 +318,16 @@ body .clip-each-small, body .clip-each-small:after, body .sideOctagon, body .sid
   clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
 }
 body .border-style-gradient:after {
-  top: 1.5px;
-  left: 1.5px;
-  right: 1.5px;
-  bottom: 1.5px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
 }
-body .center-gradient:after {
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+body .border-style-gradient-project-middle:after {
+  top: 5px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
 }
 body .center-gradient-middle:after {
   top: 5px;
@@ -270,21 +335,21 @@ body .center-gradient-middle:after {
   right: 5px;
   bottom: 5px;
 }
-body .border-style-gradient, body .border-style-gradient-project, body .border-style-gradient-project-bottom, body .border-style-gradient-project-middle {
+body .border-style-gradient, body .border-style-gradient-project, body .border-style-gradient-project-bottom, body .border-style-gradient-project-middle, body .border-style-gradient-project-middle {
   background: linear-gradient(94deg, #93e0e1, #7888dd);
 }
 body .border-style-gradient-project:after {
-  top: 5px;
-  left: 8px;
-  right: 8px;
-  bottom: 28px;
+  top: 3px;
+  left: 5px;
+  right: 5px;
+  bottom: 15px;
 }
 body .border-style-gradient-project-bottom:after {
   position: absolute;
-  top: 28px;
-  left: 8px;
-  right: 8px;
-  bottom: 5px;
+  top: 15px;
+  left: 5px;
+  right: 5px;
+  bottom: 3px;
 }
 body .border-style-gradient-big {
   position: absolute;
@@ -294,7 +359,7 @@ body .border-style-gradient-big:after {
   top: 2.5px;
   left: 2.5px;
   right: 2.5px;
-  bottom: -0.5px;
+  bottom: 2.5px;
   z-index: -1;
 }
 
