@@ -22,14 +22,14 @@
         <script src="js/appRoutes.js"></script>
         <script src="js/app.js"></script>
     </head>
-
-    <div class="outer-octagon clip-each-big border-style-gradient-big animated" ng-controller="mainController as main">
-        <div class="clip-wrap-polygon clip-each-big border-style-gradient-big animated">
+<div ng-controller="mainController as main">
+    <div class="outer-octagon clip-each-big border-style-gradient-big animated">
+        <div class="clip-wrap-polygon clip-each-big border-style-gradient-big inner-polygon animated">
             <div class="layers-container" ng-show="main.home == true;">
                 <div class="left-layer">
                    <div class="clip-wrap-1">
                         <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation(); main.setProjects()">
-                            <p class="button-links">Projects</p>
+                            <p class="button-links projects-link">Projects</p>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 <div class="middle-layer">
                     <div class="clip-wrap-2">
                         <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation(); main.setAbout();">
-                            <p class="button-links">About</p>
+                            <p class="button-links about-link">About</p>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@
 
                     <div class="clip-wrap-4">
                         <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation(); main.setContacts();">
-                            <p class="button-links contacts" href="#/contacts">Contact</p>
+                            <p class="button-links contacts contacts-link" href="#/contacts">Contact</p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="right-layer">
                     <div class="clip-wrap-3">
                         <div class="clip-each-home border-style-gradient center-gradient" ng-click="main.addRollAnimation(); main.setLinks();">
-                            <p class="button-links links-big" href="#/links">Links</p>
+                            <p class="button-links links-big links-link" href="#/links">Links</p>
                         </div>
                     </div>
                 </div>
@@ -120,10 +120,11 @@
     </div>
 
     <div class="outer-octagon-right clip-each-big border-style-gradient-big">
-        <div class="clip-wrap-polygon clip-each-big border-style-gradient-big">
-            <div class="clip-each-home side border-style-gradient animated" ng-click="main.showHome();">
+        <div class="clip-wrap-polygon inner-side-polygon clip-each-big border-style-gradient-big">
+            <div class="clip-each-home side-home side border-style-gradient animated" ng-click="main.showHome();">
                 <p class="button-links links-big" ng-show="main.showSideLinks == true">Home</p>
             </div>
         </div>
     </div>
+</div>
 </html>
