@@ -64,39 +64,44 @@
             <div class="content-container">
                 <div class="projects-container" ng-show="main.projects == true">
                     <div class="border-style-gradient-project top-container octagon-top animated">
-                        <a class="project-one">2TR</a>
+                        <a class="project-one project-link" href="https://github.com/eshuster/final_2tr">2TR</a>
                     </div>
 
                     <div class="middle-container octagon-middle border-style-gradient-project-middle animated">
-                        <a class="project-two">FlowChart</a>
+                        <a class="project-two project-link" href="https://github.com/eshuster/Flowchart">FlowChart</a>
                     </div>
 
                     <div class="border-style-gradient-project-bottom bottom-container octagon-bottom animated">
-                        <a class="project-three">TBA</a>
+                        <a class="project-three project-link" href="https://github.com/eshuster/Website">Website</a>
                     </div>
                 </div>
                 <div class="about-container" ng-show="main.about == true">
                     <div class="inner-clip-wrap-polygon clip-wrap-polygon clip-each-big border-style-gradient-big animated">
-                        <a class="about-description">About</a>
+                        <span>
+                            <div class="circle-left">{{main.description}}</div>
+                            <!-- {{main.description}} -->
+                            <!-- <div class="circle-right"></div> -->
+                            <p>{{main.aboutDescription}}</p>
+                        </span>
                     </div>
                 </div>
                 <div class="links-container" ng-show="main.lnk == true">
-                    <div class="clip-each-home  first border-style-gradient animated"></div>
-                    <div class="clip-each-home side second border-style-gradient animated"></div>
-                    <div class="clip-each-home side third border-style-gradient animated"></div>
-                    <div class="clip-each-home side fourth border-style-gradient animated"></div>
+                    <div class="clip-each-home first links-container-link border-style-gradient animated"><a href="https://github.com/eshuster">GitHub</a></div>
+                    <div class="clip-each-home side second links-container-link border-style-gradient animated"><a href="https://www.reddit.com">Reddit</a></div>
+                    <div class="clip-each-home side third links-container-link border-style-gradient animated"><a href="https://www.linkedin.com/in/eugene-shuster-009a3b72">LinkedIn</a></div>
+                    <div class="clip-each-home side links-container-link fourth border-style-gradient animated"><a href="https://angel.co/eugene-shuster-1">AngelList</a></div>
 
                 </div>
                  <div class="contacts-container" ng-show="main.contact == true">
                     <div class="inner-clip-wrap-polygon clip-wrap-polygon clip-each-big border-style-gradient-big first-contact animated">
-                        Contact
+                        <p>Gene</p>
                     </div>
                     <div class="inner-clip-wrap-polygon clip-wrap-polygon right-top-octagon clip-each-big border-style-gradient-big second-contact animated">
-                        Contact
+                        <p>Shuster</p>
                     </div>
 
                     <div class="border-style-gradient-project-bottom bottom-container octagon-bottom third-contact animated">
-                        Contact
+                        <p>eshuster3@gmail.com</p>
                     </div>
                 </div>
             </div>

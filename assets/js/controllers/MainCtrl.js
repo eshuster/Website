@@ -11,6 +11,8 @@ angular.module('MainCtrl', [])
   vm.sideLink2 = ""
   vm.sideLink3 = ""
 
+  vm.aboutDescription = "I specialize in the MEAN Stack, Ruby on Rails, SQL, and RESTful web apps with plenty of experience in designing MVC web applications that combine different types of technology through gems, modules, and various frameworks.. Recently at KontrolScan, I’ve been working with AngularJS to implement and design an organizational flowchart application for users to build visual representations of various user relationships . I'm ready and eager to continue to expand my professional and personal horizons by joining a team with a solid philosophy and product behind it"
+
   vm.showHome = function() {
     vm.addRole()
     document.getElementsByClassName('clip-wrap-polygon')[0].classList.add("rollOut")
@@ -24,6 +26,7 @@ angular.module('MainCtrl', [])
       vm.home = true;
       vm.showSideLinks = false;
       $scope.$apply();
+    document.getElementsByClassName('inner-polygon')[0].classList.add("zoomIn")
     }, 1000)
 
     setTimeout(function() {
@@ -45,7 +48,7 @@ angular.module('MainCtrl', [])
   vm.setProjects = function() {
     vm.projects = true;
     vm.sideLink1 = "About"
-    vm.sideLink2 = "Contacts"
+    vm.sideLink2 = "Contact"
     vm.sideLink3 = "Links"
 
     document.getElementsByClassName('top-container')[0].classList.add("zoomIn")
@@ -67,7 +70,7 @@ angular.module('MainCtrl', [])
     vm.about = true;
     vm.sideLink1 = "Links"
     vm.sideLink2 = "Projects"
-    vm.sideLink3 = "Contacts"
+    vm.sideLink3 = "Contact"
 
     setTimeout(function() {
       vm.removeClass('inner-clip-wrap-polygon', 'zoomIn')
@@ -77,7 +80,7 @@ angular.module('MainCtrl', [])
 
   vm.setLinks = function() {
     vm.lnk = true;
-    vm.sideLink1 = "Contacts"
+    vm.sideLink1 = "Contact"
     vm.sideLink2 = "About"
     vm.sideLink3 = "Projects"
 
@@ -129,7 +132,7 @@ angular.module('MainCtrl', [])
         $scope.$apply()
       }, 1000)
 
-    } else if (vm.sideLink1 == "Contacts") {
+    } else if (vm.sideLink1 == "Contact") {
         document.getElementsByClassName('first')[0].classList.add("zoomOut")
         document.getElementsByClassName('second')[0].classList.add("rollOut")
         document.getElementsByClassName('third')[0].classList.add("zoomOut")
@@ -200,7 +203,7 @@ angular.module('MainCtrl', [])
         $scope.$apply()
       }, 1000)
 
-    } else if (vm.sideLink2 == "Contacts") {
+    } else if (vm.sideLink2 == "Contact") {
 
       document.getElementsByClassName('top-container')[0].classList.add("zoomOut")
       document.getElementsByClassName('middle-container')[0].classList.add("zoomOut")
@@ -213,6 +216,7 @@ angular.module('MainCtrl', [])
         vm.projects = false;
         vm.lnk = false;
         vm.about = false;
+        vm.contact =true;
         vm.setContacts();
         $scope.$apply()
       }, 1000)
@@ -269,13 +273,14 @@ vm.showContent3 = function() {
       $scope.$apply()
     }, 1000)
 
-  } else if (vm.sideLink3 == "Contacts") {
+  } else if (vm.sideLink3 == "Contact") {
       document.getElementsByClassName('inner-clip-wrap-polygon')[0].classList.add("rollOut")
 
       setTimeout(function(){
         vm.about = false;
         vm.project = false;
         vm.lnk = false;
+        vm.contact = true;
         vm.setContacts();
         vm.removeClass('inner-clip-wrap-polygon', 'rollOut')
         $scope.$apply()
