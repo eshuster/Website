@@ -50,6 +50,66 @@ body .inner-clip-wrap-polygon {
   margin-top: 105px;
   background: linear-gradient(94deg, #93e0e1, #7888dd);
 }
+body .clip-each, body .clip-each:after, body .clip-each-big, body .clip-each-big:after, body .clip-each-home, body .clip-each-home:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+body .clip-each-home:hover {
+  background: #A8DDDE;
+}
+body .octagon-top, body .octagon-top:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 0 30%, 30% 0);
+  clip-path: polygon(0 0, 70% 0, 100% 40%, 0 40%, 0 0);
+}
+body .octagon-bottom, body .octagon-bottom:after {
+  -webkit-clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
+  clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
+}
+body .octagon-middle, body .octagon-middle:after {
+  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+  clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+}
+body .clip-each-small, body .clip-each-small:after, body .sideOctagon, body .sideOctagon:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+body .border-style-gradient:after {
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+body .border-style-gradient-project-middle:after {
+  top: 5px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+body .center-gradient-middle:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+body .border-style-gradient, body .border-style-gradient-project, body .border-style-gradient-project-bottom, body .border-style-gradient-project-middle, body .border-style-gradient-project-middle {
+  background: linear-gradient(94deg, #93e0e1, #7888dd);
+}
+body .border-style-gradient-project:after {
+  top: 3px;
+  left: 5px;
+  right: 5px;
+  bottom: 15px;
+}
+body .border-style-gradient-project-bottom:after {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  right: 5px;
+  bottom: 3px;
+}
+body .border-style-gradient-big {
+  position: absolute;
+}
 body .inner-polygon:after, body .inner-side-polygon:after {
   background: #F7F7F7;
 }
@@ -62,59 +122,6 @@ body .outer-octagon {
 body .outer-octagon .clip-wrap-polygon .inner-polygon {
   background: linear-gradient(94deg, #93e0e1, #7888dd) !important;
 }
-body .outer-octagon .clip-wrap-polygon .left-layer {
-  width: 250px;
-  height: 780px;
-  margin-left: 15px;
-  display: inline-block;
-}
-body .outer-octagon .clip-wrap-polygon .left-layer .clip-wrap-1 {
-  margin-top: 276px;
-  margin-left: 15px;
-}
-body .outer-octagon .clip-wrap-polygon .left-layer .clip-wrap-1:hover .button-links {
-  -webkit-text-fill-color: #93e0e1;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer {
-  width: 250px;
-  height: 780px;
-  margin-left: -5px;
-  display: inline-block;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-2 {
-  margin-left: 14px;
-  margin-top: 0px;
-  margin-bottom: 38px;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-4 {
-  margin-left: 14px;
-  margin-top: 40px;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-5 {
-  margin-left: 15px;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-5 .border-style-gradient:after {
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-}
-body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-2:hover .button-links, body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-4:hover .button-links, body .outer-octagon .clip-wrap-polygon .middle-layer .clip-wrap-5:hover .button-links {
-  -webkit-text-fill-color: #93e0e1;
-}
-body .outer-octagon .clip-wrap-polygon .right-layer {
-  width: 250px;
-  height: 780px;
-  margin-left: -5px;
-  display: inline-block;
-}
-body .outer-octagon .clip-wrap-polygon .right-layer .clip-wrap-3 {
-  margin-top: 276px;
-  margin-left: 15px;
-}
-body .outer-octagon .clip-wrap-polygon .right-layer .clip-wrap-3:hover .button-links {
-  -webkit-text-fill-color: #93e0e1;
-}
 body .outer-octagon .clip-wrap-polygon .button-links {
   font-style: bold;
   text-decoration: none;
@@ -125,31 +132,309 @@ body .outer-octagon .clip-wrap-polygon .button-links {
   font-family: Impact, Charcoal, sans-serif;
   color: black;
   -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #7888dd;
-}
-body .outer-octagon .clip-wrap-polygon .about-link {
-  margin-left: 67px;
-  margin-top: 92px;
-}
-body .outer-octagon .clip-wrap-polygon .projects-link {
-  margin-left: 46px;
-  margin-top: 92px;
-}
-body .outer-octagon .clip-wrap-polygon .contacts-link {
-  margin-left: 46px;
-  margin-top: 92px;
-}
-body .outer-octagon .clip-wrap-polygon .links-link {
-  margin-left: 74px;
-  margin-top: 92px;
 }
 body .outer-octagon .clip-wrap-polygon .center-gradient:after {
   top: 8.5px;
   left: 8.5px;
   right: 8.5px;
   bottom: 8.5px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .left-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: 15px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .left-layer .clip-wrap-1 {
+  margin-top: 276px;
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .left-layer .clip-wrap-1 .projects-link {
+  margin-left: 46px;
+  margin-top: 92px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .left-layer .clip-wrap-1:hover .button-links {
+  -webkit-text-fill-color: #93e0e1;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: -5px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-2 {
+  margin-left: 14px;
+  margin-top: 0px;
+  margin-bottom: 38px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-2 .about-link {
+  margin-left: 67px;
+  margin-top: 92px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-4 {
+  margin-left: 14px;
+  margin-top: 40px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-4 .contacts-link {
+  margin-left: 46px;
+  margin-top: 92px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-5 {
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-5 .border-style-gradient:after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-2:hover .button-links, body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-4:hover .button-links, body .outer-octagon .clip-wrap-polygon .layers-container .middle-layer .clip-wrap-5:hover .button-links {
+  -webkit-text-fill-color: #93e0e1;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .right-layer {
+  width: 250px;
+  height: 780px;
+  margin-left: -5px;
+  display: inline-block;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .right-layer .clip-wrap-3 {
+  margin-top: 276px;
+  margin-left: 15px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .right-layer .clip-wrap-3 .links-link {
+  margin-left: 74px;
+  margin-top: 92px;
+}
+body .outer-octagon .clip-wrap-polygon .layers-container .right-layer .clip-wrap-3:hover .button-links {
+  -webkit-text-fill-color: #93e0e1;
+}
+body .outer-octagon .clip-wrap-polygon .content-container a {
+  z-index: 2;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container, body .outer-octagon .clip-wrap-polygon .content-container .middle-container, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container {
+  position: relative;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container:after, body .outer-octagon .clip-wrap-polygon .content-container .middle-container:after, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container:after {
+  content: "";
+  position: absolute;
+  background: white;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container {
+  width: 720px;
+  height: 720px;
+  left: 30px;
+  top: 13px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container .project-one {
+  position: absolute;
+  font-size: 75px;
+  top: 9%;
+  left: 41%;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .middle-container {
+  width: 740px;
+  height: 490px;
+  top: 46px;
+  left: 20px;
+  position: absolute;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .middle-container .project-two {
+  position: absolute;
+  font-size: 75px;
+  top: 59%;
+  left: 29%;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container:hover, body .outer-octagon .clip-wrap-polygon .content-container .middle-container:hover, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container:hover {
+  background: #A8DDDE;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .top-container:hover .project-three, body .outer-octagon .clip-wrap-polygon .content-container .top-container:hover .project-two, body .outer-octagon .clip-wrap-polygon .content-container .top-container:hover .project-one, body .outer-octagon .clip-wrap-polygon .content-container .middle-container:hover .project-three, body .outer-octagon .clip-wrap-polygon .content-container .middle-container:hover .project-two, body .outer-octagon .clip-wrap-polygon .content-container .middle-container:hover .project-one, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container:hover .project-three, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container:hover .project-two, body .outer-octagon .clip-wrap-polygon .content-container .bottom-container:hover .project-one {
+  -webkit-text-fill-color: #93e0e1;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .bottom-container {
+  width: 720px;
+  height: 725px;
+  left: 28px;
+  top: 50px;
+  position: absolute;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .bottom-container .project-three {
+  position: absolute;
+  font-size: 75px;
+  top: 77%;
+  left: 219px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .about-container .border-style-gradient-big:after {
+  top: 2.5px;
+  left: 2.5px;
+  right: 2.5px;
+  bottom: 2.5px;
+  z-index: -1;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .about-container span .circle-left {
+  shape-outside: circle(57% at -59% 62%);
+  -webkit-clip-path: circle(57% at -59% 62%);
+  width: 204px;
+  height: 257px;
+  float: left;
+  margin-top: 204px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .about-container span .circle-right {
+  shape-outside: circle(39% at -42% 62%);
+  -webkit-clip-path: circle(39% at -42% 62%);
+  width: 204px;
+  height: 227px;
+  float: right;
+  margin-top: 204px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .about-container span p {
+  margin-top: 161px;
+  line-height: 27px;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: #7888dd;
+  -webkit-text-stroke-width: -0.5px;
+  -webkit-text-stroke-color: black;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .projects-container .project-link {
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  letter-spacing: 4px;
+  font-family: Impact, Charcoal, sans-serif;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .clip-wrap-polygon {
+  background: linear-gradient(94deg, #93e0e1, #7888dd);
+  width: 325px;
+  height: 325px;
+  margin-left: 30px;
+  margin-top: 180px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .clip-wrap-polygon p {
+  z-index: 2;
+  top: -44px;
+  position: absolute;
+  left: 28px;
+  font-size: 128px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: #93e0e1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .right-top-octagon {
+  width: 250px;
+  height: 250px;
+  margin-left: 385px;
+  margin-top: 60px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .right-top-octagon p {
+  font-size: 85px;
+  font-size: 55px;
+  top: 37px;
+  left: 37px;
+  -webkit-text-fill-color: white;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .octagon-bottom {
+  width: 600px !important;
+  height: 600px !important;
+  left: 110px !important;
+  top: 155px !important;
+  position: absolute;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .contacts-container .octagon-bottom p {
+  z-index: 2;
+  top: 395px;
+  position: absolute;
+  left: 97px;
+  font-size: 44px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: #7888dd;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .side {
+  width: 180px;
+  height: 180px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .links-container-link:hover a {
+  -webkit-text-fill-color: #93e0e1;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .first {
+  margin-top: 235px;
+  margin-left: 50px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .first a {
+  z-index: 2;
+  top: 93px;
+  position: absolute;
+  left: 70px;
+  font-size: 31px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .second {
+  margin-top: -395px;
+  margin-left: 310px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .second a {
+  z-index: 2;
+  top: 71px;
+  position: absolute;
+  left: 48px;
+  font-size: 31px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .third {
+  margin-top: 170px;
+  margin-left: 520px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .third a {
+  z-index: 2;
+  top: 72px;
+  position: absolute;
+  left: 34px;
+  font-size: 28px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .fourth {
+  margin-left: 240px;
+  margin-top: -10px;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .fourth a {
+  z-index: 2;
+  top: 72px;
+  position: absolute;
+  left: 42px;
+  font-size: 28px;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7888dd;
+}
+body .outer-octagon .clip-wrap-polygon .content-container .links-container .border-style-gradient:after {
+  top: 9px;
+  left: 9px;
+  right: 9px;
+  bottom: 9px;
 }
 body .outer-octagon .sidebar {
   height: 775px;
@@ -220,128 +505,6 @@ body .outer-octagon .sidebar .border-style-gradient:after {
   right: 5px;
   bottom: 5px;
 }
-body .links-container .side {
-  width: 180px;
-  height: 180px;
-}
-body .links-container .links-container-link:hover a {
-  -webkit-text-fill-color: #93e0e1;
-}
-body .links-container .first {
-  margin-top: 235px;
-  margin-left: 50px;
-}
-body .links-container .first a {
-  z-index: 2;
-  top: 93px;
-  position: absolute;
-  left: 70px;
-  font-size: 31px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .links-container .second {
-  margin-top: -395px;
-  margin-left: 310px;
-}
-body .links-container .second a {
-  z-index: 2;
-  top: 71px;
-  position: absolute;
-  left: 48px;
-  font-size: 31px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .links-container .third {
-  margin-top: 170px;
-  margin-left: 520px;
-}
-body .links-container .third a {
-  z-index: 2;
-  top: 72px;
-  position: absolute;
-  left: 34px;
-  font-size: 28px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .links-container .fourth {
-  margin-left: 240px;
-  margin-top: -10px;
-}
-body .links-container .fourth a {
-  z-index: 2;
-  top: 72px;
-  position: absolute;
-  left: 42px;
-  font-size: 28px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .links-container .border-style-gradient:after {
-  top: 9px;
-  left: 9px;
-  right: 9px;
-  bottom: 9px;
-}
-body .contacts-container .clip-wrap-polygon {
-  background: linear-gradient(94deg, #93e0e1, #7888dd);
-  width: 325px;
-  height: 325px;
-  margin-left: 30px;
-  margin-top: 180px;
-}
-body .contacts-container .clip-wrap-polygon p {
-  z-index: 2;
-  top: -44px;
-  position: absolute;
-  left: 28px;
-  font-size: 128px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: #93e0e1;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .contacts-container .right-top-octagon {
-  width: 250px;
-  height: 250px;
-  margin-left: 385px;
-  margin-top: 60px;
-}
-body .contacts-container .right-top-octagon p {
-  font-size: 85px;
-  font-size: 55px;
-  top: 37px;
-  left: 37px;
-  -webkit-text-fill-color: white;
-}
-body .contacts-container .octagon-bottom {
-  width: 600px !important;
-  height: 600px !important;
-  left: 110px !important;
-  top: 155px !important;
-  position: absolute;
-}
-body .contacts-container .octagon-bottom p {
-  z-index: 2;
-  top: 395px;
-  position: absolute;
-  left: 97px;
-  font-size: 44px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: #7888dd;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #7888dd;
-}
 body .outer-octagon-right {
   margin-top: -15%;
   width: 1200px;
@@ -385,186 +548,6 @@ body .outer-octagon-right .clip-wrap-polygon .clip-each-home.border-style-gradie
   left: 4px;
   right: 4px;
   bottom: 4px;
-}
-body .project-list-item {
-  margin-left: 15%;
-}
-body .project-item-div {
-  width: 100%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  border: 2px solid black;
-}
-body .content-container a {
-  z-index: 2;
-}
-body .content-container .top-container, body .content-container .middle-container, body .content-container .bottom-container {
-  position: relative;
-}
-body .content-container .top-container:after, body .content-container .middle-container:after, body .content-container .bottom-container:after {
-  content: "";
-  position: absolute;
-  background: white;
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-body .content-container .top-container {
-  width: 720px;
-  height: 720px;
-  left: 30px;
-  top: 13px;
-}
-body .content-container .top-container .project-one {
-  position: absolute;
-  font-size: 75px;
-  top: 9%;
-  left: 41%;
-}
-body .content-container .middle-container {
-  width: 740px;
-  height: 490px;
-  top: 46px;
-  left: 20px;
-  position: absolute;
-}
-body .content-container .middle-container .project-two {
-  position: absolute;
-  font-size: 75px;
-  top: 59%;
-  left: 29%;
-}
-body .content-container .top-container:hover, body .content-container .middle-container:hover, body .content-container .bottom-container:hover {
-  background: #A8DDDE;
-}
-body .content-container .top-container:hover .project-three, body .content-container .top-container:hover .project-two, body .content-container .top-container:hover .project-one, body .content-container .middle-container:hover .project-three, body .content-container .middle-container:hover .project-two, body .content-container .middle-container:hover .project-one, body .content-container .bottom-container:hover .project-three, body .content-container .bottom-container:hover .project-two, body .content-container .bottom-container:hover .project-one {
-  -webkit-text-fill-color: #93e0e1;
-}
-body .content-container .bottom-container {
-  width: 720px;
-  height: 725px;
-  left: 28px;
-  top: 50px;
-  position: absolute;
-}
-body .content-container .bottom-container .project-three {
-  position: absolute;
-  font-size: 75px;
-  top: 77%;
-  left: 219px;
-}
-body .content-container .about-container .border-style-gradient-big:after {
-  top: 2.5px;
-  left: 2.5px;
-  right: 2.5px;
-  bottom: 2.5px;
-  z-index: -1;
-}
-body .content-container .about-container span .circle-left {
-  shape-outside: circle(57% at -59% 62%);
-  -webkit-clip-path: circle(57% at -59% 62%);
-  width: 204px;
-  height: 257px;
-  float: left;
-  margin-top: 204px;
-}
-body .content-container .about-container span .circle-right {
-  shape-outside: circle(39% at -42% 62%);
-  -webkit-clip-path: circle(39% at -42% 62%);
-  width: 204px;
-  height: 227px;
-  float: right;
-  margin-top: 204px;
-}
-body .content-container .about-container span p {
-  margin-top: 161px;
-  line-height: 27px;
-  letter-spacing: 0.3px;
-  font-size: 18px;
-  font-family: Impact, Charcoal, sans-serif;
-  -webkit-text-fill-color: #7888dd;
-  -webkit-text-stroke-width: -0.5px;
-  -webkit-text-stroke-color: black;
-}
-body .content-container .projects-container .project-link {
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  letter-spacing: 4px;
-  font-family: Impact, Charcoal, sans-serif;
-  color: black;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #7888dd;
-}
-body .clip-each, body .clip-each:after, body .clip-each-big, body .clip-each-big:after, body .clip-each-home, body .clip-each-home:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-}
-body .clip-each-home:hover {
-  background: #A8DDDE;
-}
-body .octagon-top, body .octagon-top:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 0 30%, 30% 0);
-  clip-path: polygon(0 0, 70% 0, 100% 40%, 0 40%, 0 0);
-}
-body .octagon-bottom, body .octagon-bottom:after {
-  -webkit-clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
-  clip-path: polygon(30% 99%, 70% 99%, 100% 69%, 0 69%, 30% 99%);
-}
-body .octagon-middle, body .octagon-middle:after {
-  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
-  clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
-}
-body .clip-each-small, body .clip-each-small:after, body .sideOctagon, body .sideOctagon:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-}
-body .border-style-gradient:after {
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-}
-body .border-style-gradient-project-middle:after {
-  top: 5px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-}
-body .center-gradient-middle:after {
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-}
-body .border-style-gradient, body .border-style-gradient-project, body .border-style-gradient-project-bottom, body .border-style-gradient-project-middle, body .border-style-gradient-project-middle {
-  background: linear-gradient(94deg, #93e0e1, #7888dd);
-}
-body .border-style-gradient-project:after {
-  top: 3px;
-  left: 5px;
-  right: 5px;
-  bottom: 15px;
-}
-body .border-style-gradient-project-bottom:after {
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  right: 5px;
-  bottom: 3px;
-}
-body .border-style-gradient-big {
-  position: absolute;
-}
-body .outer-octagon .border-style-gradient-big:after {
-  top: 2.5px;
-  left: 2.5px;
-  right: 2.5px;
-  bottom: 2.5px;
-  z-index: -1;
 }
 body .border-style-gradient-big:after {
   top: 2.5px;
