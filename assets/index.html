@@ -6,7 +6,15 @@
 
         <title>Starter MEAN Single Page Application</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="css/app.css"> <!-- custom styles -->
+        <!-- <link rel="stylesheet" href="css/app.css"> -->
+        <link rel='stylesheet'
+              media='screen and (min-width: 400px) and (max-width: 1024px)'
+              href="css/regular.css"/>
+
+        <link rel='stylesheet'
+              media='screen and (min-width: 1025px) and (max-width: 1440px)'
+              href="css/app.css" />
+
         <link rel="stylesheet" href="css/animate.min.css">
         <!-- JS -->
         <script src="libs/angular/angular.js"></script>
@@ -22,8 +30,11 @@
         <script src="js/appRoutes.js"></script>
         <script src="js/app.js"></script>
     </head>
-<div ng-controller="mainController as main">
+<div ng-controller="mainController as main" class="flexbox-container">
+
     <div class="outer-octagon clip-each-big border-style-gradient-big animated">
+
+
         <div class="clip-wrap-polygon clip-each-big border-style-gradient-big inner-polygon animated">
             <div class="layers-container" ng-show="main.home == true;">
                 <div class="left-layer">
@@ -79,8 +90,6 @@
                     <div class="inner-clip-wrap-polygon clip-wrap-polygon clip-each-big border-style-gradient-big animated">
                         <span>
                             <div class="circle-left">{{main.description}}</div>
-                            <!-- {{main.description}} -->
-                            <!-- <div class="circle-right"></div> -->
                             <p>{{main.aboutDescription}}</p>
                         </span>
                     </div>
@@ -109,6 +118,7 @@
 
         <div class="sidebar">
             <div class="clip-each-home side1 border-style-gradient animated">
+                <p class="button-links home-link links-big" ng-click="main.showHome();">Home</p>
             </div>
             <div class="clip-each-home side2 border-style-gradient animated" ng-click="main.showContent1();">
                 <p class="button-links links-big" ng-show="main.showSideLinks == true">{{main.sideLink1}}</p>
@@ -123,6 +133,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="outer-octagon-right clip-each-big border-style-gradient-big">
         <div class="clip-wrap-polygon inner-side-polygon clip-each-big border-style-gradient-big">
